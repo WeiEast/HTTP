@@ -1,6 +1,6 @@
 # Session
 
-Session只存在于服务端，客户端拿到的只是存储在cookie中的JSESSIONID 。
+除了使用Cookie，Web应用还是用Session来记录客户状态。Session只存在于服务端，客户端拿到的只是存储在cookie中的JSESSIONID 。
 
 Session何时删除：
 * Session超时：超时指的是连续一定时间服务器没有收到该Session所对应客户端的请求，并且这个时间超过了服务器设置的Session超时的最大时间。

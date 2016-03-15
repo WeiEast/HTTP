@@ -53,7 +53,7 @@
         data-chapter-title="HTTPS介绍"
         data-filepath="ch4/HTTPS介绍.md"
         data-basepath=".."
-        data-revision="Tue Mar 15 2016 13:21:13 GMT+0800 (中国标准时间)"
+        data-revision="Tue Mar 15 2016 14:28:46 GMT+0800 (中国标准时间)"
         data-innerlanguage="">
     
 
@@ -275,14 +275,59 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="ch3/HTTP之无状态.html">
+        <li class="chapter " data-level="3.2" data-path="ch3/HTTP报文.html">
+            
+                
+                    <a href="../ch3/HTTP报文.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        HTTP报文
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="ch3/HTTP请求方法.html">
+            
+                
+                    <a href="../ch3/HTTP请求方法.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        HTTP请求方法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="ch3/HTTP状态码.html">
+            
+                
+                    <a href="../ch3/HTTP状态码.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        HTTP状态码
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="ch3/HTTP之无状态.html">
             
                 
                     <a href="../ch3/HTTP之无状态.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>3.2.</b>
+                            <b>3.5.</b>
                         
                         HTTP之无状态
                     </a>
@@ -290,14 +335,14 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3" data-path="ch3/Cookie.html">
+        <li class="chapter " data-level="3.6" data-path="ch3/Cookie.html">
             
                 
                     <a href="../ch3/Cookie.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>3.3.</b>
+                            <b>3.6.</b>
                         
                         Cookie
                     </a>
@@ -305,14 +350,14 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4" data-path="ch3/Session.html">
+        <li class="chapter " data-level="3.7" data-path="ch3/Session.html">
             
                 
                     <a href="../ch3/Session.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>3.4.</b>
+                            <b>3.7.</b>
                         
                         Session
                     </a>
@@ -431,6 +476,13 @@
                     <section class="normal" id="section-">
                     
                         <h1 id="https&#x4ECB;&#x7ECD;">HTTPS&#x4ECB;&#x7ECD;</h1>
+<p><strong>HTTP&#x7684;&#x4E0D;&#x8DB3;</strong></p>
+<ul>
+<li>&#x901A;&#x4FE1;&#x4F7F;&#x7528;&#x4E0D;&#x52A0;&#x5BC6;&#x7684;&#x660E;&#x6587;&#xFF0C;&#x5185;&#x5BB9;&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x7A83;&#x542C;&#x3002;</li>
+<li>&#x4E0D;&#x9A8C;&#x8BC1;&#x901A;&#x4FE1;&#x65B9;&#x7684;&#x8EAB;&#x4EFD;&#xFF0C;&#x56E0;&#x6B64;&#x6709;&#x53EF;&#x80FD;&#x906D;&#x9047;&#x4F2A;&#x88C5;&#x3002;</li>
+<li>&#x65E0;&#x6CD5;&#x8BC1;&#x660E;&#x62A5;&#x6587;&#x7684;&#x5B8C;&#x6574;&#x6027;&#xFF0C;&#x6709;&#x53EF;&#x80FD;&#x5DF2;&#x906D;&#x7BE1;&#x6539;&#x3002;</li>
+</ul>
+<p>&#x6539;&#x8FDB;&#xFF0C;&#x91C7;&#x7528;HTTPS</p>
 <p><strong>HTTPS=HTTP+&#x52A0;&#x5BC6;+&#x8BA4;&#x8BC1;+&#x5B8C;&#x6574;&#x6027;&#x4FDD;&#x62A4;</strong></p>
 <p>HTTPS&#x76F8;&#x5BF9;&#x4E8E;HTTP&#x6709;&#x54EA;&#x4E9B;&#x4E0D;&#x540C;&#x5462;&#xFF1F;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x5728;HTTP&#x8DDF;TCP&#x4E2D;&#x95F4;&#x52A0;&#x591A;&#x4E86;&#x4E00;&#x5C42;&#x52A0;&#x5BC6;&#x5C42;TLS/SSL&#x3002;</p>
 <p>TLS/SSL&#xFF1A;&#x901A;&#x4FD7;&#x7684;&#x8BB2;TLS&#x3001;SSL&#x5176;&#x5B9E;&#x662F;&#x7C7B;&#x4F3C;&#x7684;&#x4E1C;&#x897F;&#xFF0C;SSL&#x662F;&#x4E2A;&#x52A0;&#x5BC6;&#x5957;&#x4EF6;&#xFF0C;&#x8D1F;&#x8D23;&#x5BF9;HTTP&#x7684;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#x3002;
@@ -439,7 +491,10 @@ TLS&#x662F;SSL&#x7684;&#x5347;&#x7EA7;&#x7248;&#x3002;&#x73B0;&#x5728;&#x63D0;&#
 &#x5BF9;&#x79F0;&#x52A0;&#x5BC6;&#x7B80;&#x5355;&#x8BF4;&#x5C31;&#x662F;&#x52A0;&#x5BC6;&#x548C;&#x89E3;&#x5BC6;&#x90FD;&#x662F;&#x7528;&#x7684;&#x540C;&#x4E00;&#x628A;&#x94A5;&#x5319;&#x3002;&#x975E;&#x5BF9;&#x79F0;&#x52A0;&#x5BC6;&#x6709;&#x4E24;&#x628A;&#x94A5;&#x5319;&#xFF0C;&#x5373;&#x516C;&#x5F00;&#x5BC6;&#x94A5;&#x548C;&#x79C1;&#x6709;&#x5BC6;&#x94A5;&#x3002;</p>
 <p><strong>HTTPS&#x4F7F;&#x7528;&#x6DF7;&#x5408;&#x52A0;&#x5BC6;&#x65B9;&#x5F0F;&#xFF1A;&#x5BF9;&#x79F0;&#x52A0;&#x5BC6;&#x548C;&#x975E;&#x5BF9;&#x79F0;&#x52A0;&#x5BC6;&#x7684;&#x5E76;&#x7528;&#x7684;&#x65B9;&#x5F0F;&#x3002;</strong></p>
 <p>HTTPS&#x901A;&#x4FE1;&#x65F6;&#x5E8F;&#x56FE;&#xFF1A;</p>
-<p><img src="../img/https.png" alt="HTTPS&#x901A;&#x4FE1;&#x65F6;&#x5E8F;&#x56FE;"></p>
+<p><img src="../img/https.png" alt="HTTPS&#x901A;&#x4FE1;&#x65F6;&#x5E8F;&#x56FE;" title="HTTPS&#x901A;&#x4FE1;&#x65F6;&#x5E8F;&#x56FE;"></p>
+<p>&#x53C2;&#x8003;&#x8D44;&#x6599;&#xFF1A;</p>
+<p><a href="http://blog.csdn.net/fangaoxin/article/details/6952954" target="_blank">http://blog.csdn.net/fangaoxin/article/details/6952954</a></p>
+<p><a href="http://www.jb51.net/article/14566.htm" target="_blank">http://www.jb51.net/article/14566.htm</a></p>
 
                     
                     </section>
