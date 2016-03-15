@@ -47,3 +47,12 @@ TCP连接在发送后将仍然保持打开状态，于是，浏览器可以继�
 
 
 ### HTTP应答报文
+
+
+参考资料：
+
+http://www.cnblogs.com/stg609/articles/1231832.html
+
+http://www.cnblogs.com/stg609/archive/2008/07/06/1236966.html
+
+http://blog.csdn.net/lxzo123/article/details/6708041
