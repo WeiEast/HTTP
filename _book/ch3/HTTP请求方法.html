@@ -53,7 +53,7 @@
         data-chapter-title="HTTP请求方法"
         data-filepath="ch3/HTTP请求方法.md"
         data-basepath=".."
-        data-revision="Tue Mar 15 2016 15:08:01 GMT+0800 (中国标准时间)"
+        data-revision="Tue Mar 15 2016 16:07:31 GMT+0800 (中国标准时间)"
         data-innerlanguage="">
     
 
@@ -458,16 +458,16 @@
 <h5 id="http&#x7684;&#x8BF7;&#x6C42;&#x65B9;&#x6CD5;&#xFF1A;">HTTP&#x7684;&#x8BF7;&#x6C42;&#x65B9;&#x6CD5;&#xFF1A;</h5>
 <p>&#x8BF7;&#x6C42;&#x65B9;&#x6CD5;&#x6709;&#x5982;&#x4E0B;&#x51E0;&#x79CD;&#xFF1A;</p>
 <ul>
-<li>GET</li>
-<li>POST</li>
-<li>HEAD</li>
-<li>PUT</li>
-<li>DELETE</li>
-<li>OPTIONS</li>
-<li>TRACE</li>
-<li>CONNECT</li>
+<li>GET - &#x5BF9;&#x670D;&#x52A1;&#x5668;&#x8D44;&#x6E90;&#x7684;&#x7B80;&#x5355;&#x8BF7;&#x6C42;</li>
+<li>POST - &#x7528;&#x4E8E;&#x53D1;&#x9001;&#x5305;&#x542B;&#x7528;&#x6237;&#x63D0;&#x4EA4;&#x6570;&#x636E;&#x7684;&#x8BF7;&#x6C42;</li>
+<li>HEAD - &#x7C7B;&#x4F3C;&#x4E8E;get&#x8BF7;&#x6C42;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x8FD4;&#x56DE;&#x7684;&#x54CD;&#x5E94;&#x4E2D;&#x6CA1;&#x6709;&#x5177;&#x4F53;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x7528;&#x4E8E;&#x83B7;&#x53D6;&#x62A5;&#x5934;</li>
+<li>PUT - &#x5411;&#x6307;&#x5B9A;&#x8D44;&#x6E90;&#x4F4D;&#x7F6E;&#x4E0A;&#x4F20;&#x5176;&#x6700;&#x65B0;&#x5185;&#x5BB9;</li>
+<li>DELETE - &#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x7528;&#x6765;&#x5220;&#x9664;&#x6307;&#x5B9A;&#x6587;&#x6863;&#x7684;&#x8BF7;&#x6C42;</li>
+<li>OPTIONS - &#x8FD4;&#x56DE;&#x6240;&#x6709;&#x53EF;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x68C0;&#x67E5;&#x670D;&#x52A1;&#x5668;&#x652F;&#x6301;&#x54EA;&#x4E9B;&#x65B9;&#x6CD5;</li>
+<li>TRACE - &#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x7684;&#x4E00;&#x4E2A;&#x526F;&#x672C;&#xFF0C;&#x4EE5;&#x8DDF;&#x8E2A;&#x5176;&#x5904;&#x7406;&#x8FDB;&#x7A0B;</li>
+<li>CONNECT - &#x7528;&#x4E8E;ssl&#x96A7;&#x9053;&#x7684;&#x57FA;&#x4E8E;&#x4EE3;&#x7406;&#x7684;&#x8BF7;&#x6C42;</li>
 </ul>
-<p>&#x901A;&#x5E38;&#x4F7F;&#x7528;&#x7684;&#x53EA;&#x6709;GET &#x548C;POST&#x65B9;&#x5F0F;&#x3002;REST &#x5E94;&#x7528;&#x4E2D;&#x8FD8;&#x4F1A;&#x7528;&#x5230;put &#x548C;delete&#x65B9;&#x6CD5;&#x3002;&#x4E00;&#x822C;&#x6765;&#x8BF4; GET&#x7528;&#x6237;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x67E5;&#x8BE2;&#x6570;&#x636E;&#xFF0C;POST&#x7528;&#x6237;&#x65B0;&#x5EFA;&#x6570;&#x636E;&#xFF0C;PUT&#x7528;&#x6237;&#x66F4;&#x65B0;&#x6570;&#x636E;&#xFF0C;DELETE&#x7528;&#x6237;&#x5220;&#x9664;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x901A;&#x5E38;&#x4F7F;&#x7528;&#x7684;&#x53EA;&#x6709;GET &#x548C;POST&#x65B9;&#x5F0F;&#x3002;REST &#x5E94;&#x7528;&#x4E2D;&#x8FD8;&#x4F1A;&#x7528;&#x5230;put &#x548C;delete&#x65B9;&#x6CD5;&#x3002;&#x4E00;&#x822C;&#x6765;&#x8BF4; GET&#x7528;&#x4E8E;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x67E5;&#x8BE2;&#x6570;&#x636E;&#xFF0C;POST&#x7528;&#x4E8E;&#x65B0;&#x5EFA;&#x6570;&#x636E;&#xFF0C;PUT&#x7528;&#x4E8E;&#x66F4;&#x65B0;&#x6570;&#x636E;&#xFF0C;DELETE&#x7528;&#x4E8E;&#x5220;&#x9664;&#x6570;&#x636E;&#x3002;</p>
 <h5 id="get&#x4E0E;post&#x7684;&#x533A;&#x522B;">GET&#x4E0E;POST&#x7684;&#x533A;&#x522B;</h5>
 <ol>
 <li>&#x5728;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;Get&#x65B9;&#x5F0F;&#x5728;&#x901A;&#x8FC7;URL&#x63D0;&#x4EA4;&#x6570;&#x636E;&#xFF0C;&#x6570;&#x636E;&#x5728;URL&#x4E2D;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF1B;POST&#x65B9;&#x5F0F;&#xFF0C;&#x6570;&#x636E;&#x653E;&#x7F6E;&#x5728;HTML HEADER&#x5185;&#x63D0;&#x4EA4;&#x3002;</li>

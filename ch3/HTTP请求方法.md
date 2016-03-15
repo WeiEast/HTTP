@@ -3,16 +3,16 @@
 ##### HTTP的请求方法：
 
 请求方法有如下几种：
-* GET
-* POST
-* HEAD
-* PUT
-* DELETE
-* OPTIONS
-* TRACE
-* CONNECT
+* GET - 对服务器资源的简单请求
+* POST - 用于发送包含用户提交数据的请求
+* HEAD - 类似于get请求，只不过返回的响应中没有具体的内容，用于获取报头
+* PUT - 向指定资源位置上传其最新内容
+* DELETE - 发送一个用来删除指定文档的请求
+* OPTIONS - 返回所有可用的方法，可检查服务器支持哪些方法
+* TRACE - 发送请求的一个副本，以跟踪其处理进程
+* CONNECT - 用于ssl隧道的基于代理的请求
 
-通常使用的只有GET 和POST方式。REST 应用中还会用到put 和delete方法。一般来说 GET用户获取数据查询数据，POST用户新建数据，PUT用户更新数据，DELETE用户删除数据。
+通常使用的只有GET 和POST方式。REST 应用中还会用到put 和delete方法。一般来说 GET用于获取数据查询数据，POST用于新建数据，PUT用于更新数据，DELETE用于删除数据。
 
 ##### GET与POST的区别
 1. 在客户端，Get方式在通过URL提交数据，数据在URL中可以看到；POST方式，数据放置在HTML HEADER内提交。
