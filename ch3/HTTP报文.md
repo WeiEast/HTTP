@@ -43,13 +43,98 @@ Connection:keep-alive
 TCP连接在发送后将仍然保持打开状态，于是，浏览器可以继续通过相同的连接发送请求。保持连接节省了为每个请求建立新连接所需的时间，还节约了网络带宽。
 
 
+
+### HTTP 报文结构
+
+HTTP分为请求报文(Request)和响应报文(Response)两部分。
+
+请求报文及响应报文的结构：报文首部+报文主体
+
+
 ### HTTP请求报文
 
+HTTP 请求报文由请求行、请求头部、空行 和 请求包体 4 个部分组成，如下图所示：
 
-### HTTP应答报文
+![HTTP请求消息实例](/img/request1.jpg "HTTP请求消息实例")
 
+请求行
+通用信息头|请求头|实体头
+CRLF(回车换行)
+实体内容
+请求行 = 方法 [空格] 请求URI [空格] 版本号 [回车换行]
+
+HTTP请求消息实例：
+
+* GET
+
+````
+GET /search?hl=zh-CN&source=hp&q=domety&aq=f&oq= HTTP/1.1  
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/vnd.ms-excel, application/vnd.ms-powerpoint, 
+application/msword, application/x-silverlight, application/x-shockwave-flash, */*  
+Referer: <a href="http://www.google.cn/">http://www.google.cn/</a>  
+Accept-Language: zh-cn  
+Accept-Encoding: gzip, deflate  
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; TheWorld)  
+Host: <a href="http://www.google.cn">www.google.cn</a>  
+Connection: Keep-Alive  
+Cookie: PREF=ID=80a06da87be9ae3c:U=f7167333e2c3b714:NW=1:TM=1261551909:LM=1261551917:S=ybYcq2wpfefs4V9g; 
+NID=31=ojj8d-IygaEtSxLgaJmqSjVhCspkviJrB6omjamNrSm8lZhKy_yMfO2M4QMRKcH1g0iQv9u-2hfBW7bUFwVh7pGaRUb0RnHcJU37y-
+FxlRugatx63JLv7CWMD6UB_O_r  
+
+````
+
+* POST
+
+````
+
+POST /search HTTP/1.1  
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/vnd.ms-excel, application/vnd.ms-powerpoint, 
+application/msword, application/x-silverlight, application/x-shockwave-flash, */*  
+Referer: <a href="http://www.google.cn/">http://www.google.cn/</a>  
+Accept-Language: zh-cn  
+Accept-Encoding: gzip, deflate  
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; TheWorld)  
+Host: <a href="http://www.google.cn">www.google.cn</a>  
+Connection: Keep-Alive  
+Cookie: PREF=ID=80a06da87be9ae3c:U=f7167333e2c3b714:NW=1:TM=1261551909:LM=1261551917:S=ybYcq2wpfefs4V9g; 
+NID=31=ojj8d-IygaEtSxLgaJmqSjVhCspkviJrB6omjamNrSm8lZhKy_yMfO2M4QMRKcH1g0iQv9u-2hfBW7bUFwVh7pGaRUb0RnHcJU37y-
+FxlRugatx63JLv7CWMD6UB_O_r  
+
+hl=zh-CN&source=hp&q=domety  
+
+````
+
+
+### HTTP响应报文
+
+HTTP 响应报文由状态行、响应头部、空行 和 响应包体 4 个部分组成，如下图所示：
+
+![HTTP请求消息实例](/img/response.png "HTTP请求消息实例")
+
+
+响应报文实例：
+````
+HTTP/1.1 200 OK
+Date: Sat, 31 Dec 2005 23:59:59 GMT
+Content-Type: text/html;charset=ISO-8859-1
+Content-Length: 122
+
+＜html＞
+＜head＞
+＜title＞Wrox Homepage＜/title＞
+＜/head＞
+＜body＞
+＜!-- body goes here --＞
+＜/body＞
+＜/html＞
+
+````
 
 参考资料：
+
+http://blog.csdn.net/zhangliang_571/article/details/23508953
+
+http://network.chinabyte.com/401/13238901.shtml
 
 http://www.cnblogs.com/stg609/articles/1231832.html
 
